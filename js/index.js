@@ -53,11 +53,4 @@ const init = () => {
     });
 }
 
-function updateSummary(data){
-    const titleNode = document.querySelector("#movieDetails h4");
-    const summaryNode = document.querySelector("#movieDetails p");
-    titleNode.textContent = data.title;
-    summaryNode.textContent = data.summary;
-}
-
 document.addEventListener('DOMContentLoaded', init);
